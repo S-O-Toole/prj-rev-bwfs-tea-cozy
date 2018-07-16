@@ -1,0 +1,113 @@
+body{
+  margin: 0 auto;
+  font-family: helvetica;
+  font-size: 22px;
+  background-color: black;
+  color: seashell;
+  opacity: 0.9;
+  text-align: center;
+}
+
+header{
+  height:69px;  width:100%;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  position: fixed; z-index: 1;
+  vertical-align: middle; /* doesn't work on logo*/
+  display: flex;
+}
+.logo{
+  /*background-image: url(../images/img-tea-cozy-logo.png); width: auto; -//only appears when actual diementions are used-
+  flex: 1 1 264px;
+  display: block;*/
+  position: relative; top:9.5px; left:10px;  /*total padding-left = 10px*/
+}
+header ul{
+  position: absolute; right: 9.5px; /*header padding =9.5*/
+}
+header li{
+  display: inline-block;
+  text-transform: capitalize;
+  padding-right: 20px;
+}
+header a{
+  color: seashell;
+}
+/*============= end header ==================*/
+.wrapper-container{
+  display: inline-flex; /*centers all in browser window*/
+  margin: 0 auto;
+  width:s 1200px;
+}
+.column-container{  /* position all child containers into single ccolumn //could have been called .our-mission */
+  display: flex;
+  flex-direction: column;
+}
+.featured-tea{
+  display: flex;
+  justify-content: space-around;
+}
+.tea-product{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.image-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  vertical-align: middle;
+}
+.our-mission .image-content{
+  background-image: url(../images/img-mission-background.jpg);
+  width:1200px; height: 700px;
+  justify-content: center;
+  margin-top: 70px;
+}
+.featured-tea .image-content{
+  width:300px; height: 200px;
+}
+.content{
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: black;
+}
+h2,
+h3,
+h4{
+  text-transform: capitalize;
+  background-color: black;
+  margin: 0;
+}
+.locations{
+  background-image: url(../images/img-locations-background.jpg);
+  width: 1200px; height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+}
+.locations .image-content{
+  background-color: black;
+  opacity: 1;
+  width:300px height:300px;
+  margin-right: 40px;
+  display: flex;
+}
+.locations h2{
+  background-color: none;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 15px;
+}
+/*================= end content =============*/
+footer{
+  height: 200px;
+}
+.copyright{
+  display: block;
+  text-align: left;
+  vertical-align: bottom;
+  position: absolute; left: 20px; bottom: 10px;
+}/*why is this div vertically centered ? */

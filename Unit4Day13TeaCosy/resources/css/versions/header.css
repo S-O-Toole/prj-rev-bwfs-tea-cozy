@@ -1,0 +1,36 @@
+body{
+  margin: 0 auto;
+  font-family: helvetica;
+  font-size: 22px;
+  background-color: black;
+  color: seashell;
+  opacity: 0.9;
+  text-align: center;
+}
+
+header{
+  height:69px;  width:100%;
+  padding:9.5px;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  vertical-align: middle;
+  display: flex;
+}
+
+.logo{
+  /*background-image: url(../images/img-tea-cozy-logo.png); width: auto; -//only appears when actual diementions are used-
+  flex: 1 1 264px;
+  display: block;*/
+  position: relative; top:9.5px;
+}
+header ul{
+  position: absolute; right: 9.5px; /*header padding =9.5*/
+}
+header li{
+  display: inline-block;
+  text-transform: capitalize;
+  padding-right: 20px;
+}
+header a{
+  color: seashell;
+}

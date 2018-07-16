@@ -1,0 +1,70 @@
+body{
+  margin: 0 auto;
+  font-family: helvetica;
+  font-size: 22px;
+  background-color: black;
+  color: seashell;
+  opacity: 0.9;
+  text-align: center;
+}
+
+header{
+  height:69px;  width:100%;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  position: fixed; z-index: 1;
+  vertical-align: middle; /* doesn't work on logo*/
+  display: flex;
+}
+.logo{
+  /*background-image: url(../images/img-tea-cozy-logo.png); width: auto; -//only appears when actual diementions are used-
+  flex: 1 1 264px;
+  display: block;*/
+  position: relative; top:9.5px; left:10px;  /*total padding-left = 10px*/
+}
+header ul{
+  position: absolute; right: 9.5px; /*header padding =9.5*/
+}
+header li{
+  display: inline-block;
+  text-transform: capitalize;
+  padding-right: 20px;
+}
+header a{
+  color: seashell;
+}
+/*============= end header ==================*/
+.wrapper-container{
+  display: inline-flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+.our-mission-wrapper{
+  background-image: url(../images/img-mission-background.jpg);
+  width:1200px; height: 700px;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+}
+h2,
+h4{
+  text-transform: capitalize;
+}
+.flex-box{
+  align-items: center;
+  background-color: black;
+}
+.row-container{
+  display:inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width:1000px;
+  /*struggling to center items*/
+}
+.row-flex-box{
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  /* stuggling to shrink background images*/
+}
